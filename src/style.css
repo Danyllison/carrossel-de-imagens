@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagens-de-fundo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slide{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.mostrar{
+    opacity: 1;
+}
+
+.bloco-texto{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 180px;
+    border-radius: 10px;
+    height: 700px;
+    width: 620px;
+}
+
+.titulo{
+    font-size: 50px;
+    margin: 65px 0px 80px 60px;
+    font-weight: 400;
+    color: white;
+}
+
+.texto{
+    font-size: 25px;
+    margin: 0px 60px 0px 60px;
+    color: white;
+}
+
+.botao{
+    position: absolute;
+    bottom: 150px;
+    left: 60px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.seta-voltar, .seta-avancar{
+    z-index: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.seta-voltar{
+    transform: rotateY(180deg);
+    left: 70px;
+}
+
+.seta-avancar{
+    right: 70px;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.seta:hover{
+    transform: scale(115%);
+    transition: 0.3s ease-in-out;
+}
+
+
+.slide-pernambuco{
+    background: url(./imagens/imagem1.png) center no-repeat;
+    background-size: cover;
+}
+
+.slide-rio{
+    background: url(./imagens/imagem2.png);
+    background-size: cover;
+}
+
+.slide-bonito{
+    background: url(./imagens/imagem3.png);
+    background-size: cover;
+}
+
+.slide-bahia{
+    background: url(./imagens/imagem4.png);
+    background-size: cover;
+}
+
+.rosa{
+    color: #c50000;
+}
+
+.verde{
+    color: #d9dd10;
+}
+
+.laranja{
+    color: #a63a17;
+}
+
+.azul{
+    color: #10acdd;
+}
+
+
